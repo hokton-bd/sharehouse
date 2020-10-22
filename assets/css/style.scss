@@ -439,7 +439,7 @@ h3 {
             background: rgba(0, 0, 0, .7);
             font-size: 1.8rem;
             padding: 3.2rem;
-            width: 80%;
+            width: 100%;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
@@ -451,14 +451,18 @@ h3 {
         display: block;
     }
 
+    .button {
+        font-size: 8rem;
+    }
+
     .prev {
         @include fa('\f104');
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 4.8rem;
         z-index: 1;
         color: $white;
+        left: 8%;
     }
 
     .next {
@@ -466,8 +470,7 @@ h3 {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 8%;
-        font-size: 4.8rem;
+        right: 13%;
         z-index: 1;
         color: $white;
     }
