@@ -421,6 +421,7 @@ h3 {
   transform: translateY(-50%);
   font-size: 4.8rem;
   z-index: 1;
+  color: #fff;
 }
 
 .detail .prev::before {
@@ -439,6 +440,7 @@ h3 {
   right: 8%;
   font-size: 4.8rem;
   z-index: 1;
+  color: #fff;
 }
 
 .detail .next::before {

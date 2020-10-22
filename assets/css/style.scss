@@ -194,7 +194,7 @@ h3 {
             color: $white;
             display: none;
         }
-    }
+}
     .drawer-content {
         position: fixed;
         width: 100%;
@@ -417,6 +417,7 @@ h3 {
 
     .slider {
         position: relative;
+
     }
 
     .slide {
@@ -457,6 +458,7 @@ h3 {
         transform: translateY(-50%);
         font-size: 4.8rem;
         z-index: 1;
+        color: $white;
     }
 
     .next {
@@ -467,6 +469,7 @@ h3 {
         right: 8%;
         font-size: 4.8rem;
         z-index: 1;
+        color: $white;
     }
 
     .read-more {
