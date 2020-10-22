@@ -11,11 +11,12 @@ $container-width: 1194px;
 $inner-width: 1012px;
 $breakpoints: (
   "sp": "screen and (max-width: 767px)",
-  "tab": "screen and (max-width: #{$inner-width - 1px})",
-  "pc": "screen and (min-width: #{$inner-width})"
+  "tab": "screen and (max-width: 1000px)",
+  "sm-pc": "screen and (max-width: 1025px)"
 );
 
-//font-awesome
+
+// font-awesome
 $fa: 'Font Awesome 5 Free';
 
 //mixin
@@ -169,6 +170,85 @@ h3 {
 
 }
 
+.drawer {
+
+    .drawer-toggler {
+        position: fixed;
+        right: 16%;
+        top: 6%;
+        z-index: 11;
+
+        .drawer-btn {
+            font-size: 3.6rem;
+        }
+
+    }
+
+        .opener {
+            @include fa('\f0c9');
+            display: none;
+        }
+
+        .closer {
+            @include fa('\f00d');
+            color: $white;
+            display: none;
+        }
+    }
+    .drawer-content {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        display: none;
+        background: rgba(0, 0, 0, .9);
+        z-index: 10;
+        height: 100vh;
+        padding: 10rem 3rem;
+
+        .drawer-list {
+            list-style: none;
+        }
+
+        .drawer-item {
+
+            padding: 1.6rem;
+
+            &::before {
+                color: $white;
+                font-size: 2rem;
+            }
+
+            &:first-child {
+                @include fa('\f059');
+            }
+
+            &:nth-child(2) {
+                @include fa('\f4c4');
+            }
+
+            &:nth-child(3) {
+                @include fa('\f015');
+            }
+
+            &:nth-child(4) {
+                @include fa('\f2c1');
+            }
+
+            &:nth-child(5) {
+                @include fa('\f1d8');
+            }
+
+
+        }
+
+        .drawer-link {
+
+            color: $white;
+            padding-left: 3.6rem;
+            
+        }
+
+    }
 
 //global-nav 
 .global-nav {
@@ -205,11 +285,12 @@ h3 {
 
     .top-left{
         float: left;
-        width: 63.2rem;
+        width: 60%;
     }
 
     .top-right {
         float: right;
+        width: 35%;
     }
 
     .top-list {
@@ -235,11 +316,12 @@ h3 {
     .support-block {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .support-item {
         text-align: center;
-        width: 30rem;
+        width: calc(33.333333% - 3.2rem);
 
         .item-head {
 
@@ -368,16 +450,13 @@ h3 {
         display: block;
     }
 
-    .button {
-        
-    }
-
     .prev {
         @include fa('\f104');
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         font-size: 4.8rem;
+        z-index: 1;
     }
 
     .next {
@@ -387,6 +466,7 @@ h3 {
         transform: translateY(-50%);
         right: 8%;
         font-size: 4.8rem;
+        z-index: 1;
     }
 
     .read-more {
@@ -471,7 +551,7 @@ h3 {
 
         .content-left {
             float: left;
-            width: 60rem;
+            width: 60%;
         }
 
         .owner-desc {
@@ -480,6 +560,7 @@ h3 {
 
         .content-right {
 
+            width: 35%;
             float: right;
 
         }
@@ -541,3 +622,5 @@ h3 {
     margin-bottom: 26.6rem;
     
 }
+
+@import 'responsive.scss';

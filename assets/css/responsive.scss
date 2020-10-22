@@ -1,0 +1,312 @@
+@include mq('sm-pc') {
+
+    $responsive-container: 860px;
+    $responsive-inner: 720px;
+
+    .container {
+        width: 100%;
+        max-width: $responsive-container;
+    }
+
+    .inner {
+        width: 100%;
+        max-width: $responsive-inner;
+    }
+
+    .header {
+        .title {
+            font-size: 4.8rem;
+        }
+    }
+
+    .global-nav {
+
+        .nav-link {
+            font-size: 1.6rem;
+        }
+
+    }
+
+}
+
+@include mq('tab') {
+
+    .container {
+
+        max-width: 720px;
+        width: 100%;
+
+    }
+
+    .inner {
+
+        max-width: 680px;
+        width: 100%;
+
+    }
+
+    .top {
+
+        p, li {
+            font-size: 1.6rem;
+        }
+
+        .top-right {
+            margin-top: 20rem;
+        }
+
+    }
+
+    .support {
+
+        .support-item {
+            
+            width: calc(50% - 3.2rem);
+            margin: 0 auto;
+            margin-bottom: 2rem;
+
+            .item-title {
+                font-size: 2rem;
+            }
+
+            .item-desc {
+                font-size: 1.6rem;
+            }
+            
+        }
+        
+    }
+
+    .detail {
+
+        .table {
+
+
+        }
+
+        td {
+
+            font-size: 1.6rem;
+
+        }
+
+    }
+
+    .point {
+
+        .check-list {
+            width: 100%;
+        }
+
+        .check-item {
+
+            font-size: 1.4rem;
+
+        }
+
+    }
+
+    .owner {
+
+        .owner-content {
+
+            .owner-desc {
+                font-size: 1.6rem;
+            }
+
+        }
+
+    }
+
+}
+
+
+@include mq('sp') {
+
+    .container {
+
+        max-width: 400px;
+        width: 100%;
+
+    }
+
+    .inner {
+        max-width: 360px;
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 2.4rem;
+    }
+
+    .header {
+
+        .header-text {
+
+            font-size: 2.4rem;
+
+        }
+
+
+    }
+
+    .global-nav {
+        display: none;
+    }
+
+    .drawer {
+
+        .closer {
+            display: none;
+        }
+
+        .opener {
+            display: block;
+        }
+
+    }
+
+    .d-check {
+
+        .opener {
+            display: none;
+        }
+
+        .closer {
+            display: block;
+        }
+
+        .drawer-content {
+            display: block;
+        }
+
+    }
+
+    .top {
+        padding-top: 3rem;
+
+        .section-title {
+            font-size: 3.2rem;
+        }
+
+        .top-left {
+            float: none;
+            width: 100%;
+        }
+
+        .top-right {
+            float: none;
+            width: 100%;
+            margin-top: 6rem;
+        }
+
+    }
+
+    .support {
+
+        .support-item {
+            
+            width: 100%;
+            
+        }
+    }
+
+    .iframe-responsive {
+        position: relative;
+        width: 100%;
+        padding-top: 36rem;
+
+        iframe {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+
+    }
+
+    .detail {
+
+        td {
+
+            &:nth-child(odd) {
+
+                width: 0;
+
+            }
+
+        }
+
+
+        .slide .img-desc {
+
+            padding: 1.6rem;
+            width: 100%;
+
+        }
+
+        .button {
+            color: $white;
+        }
+        
+        .next {
+            right: 16%;
+        }
+
+        .prev {
+            left: 9%;
+        }
+
+    }
+
+    .point {
+
+        .campaign-block {
+            width: 100%;
+        }
+
+        .fw-b {
+            font-size: 1.6rem;
+        }
+
+    }
+
+
+    .owner {
+
+        .owner-content {
+
+            .content-left {
+
+                float: none;
+                width: 100%;
+
+            }
+
+            .content-right {
+
+                float: none;
+                width: 100%;
+                margin-top: 6rem;
+
+            }
+
+        }
+
+    }
+
+    .contact-desc {
+        p {
+            font-size: 1.4rem;
+
+        }
+    }
+
+    .contact-message {
+        font-size: 1.5rem;
+    }
+
+}
