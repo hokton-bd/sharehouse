@@ -455,12 +455,15 @@ h3 {
 }
 
 .detail .read-more {
+  background: #00C2FF;
+  color: #fff;
   display: block;
   width: 27.5rem;
   padding: 1.5rem;
   border: 1px solid #eeeeee;
   margin: 0 auto;
   text-align: center;
+  border-radius: 8px;
 }
 
 .point {

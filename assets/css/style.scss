@@ -476,12 +476,15 @@ h3 {
     }
 
     .read-more {
+        background: $main;
+        color: $white;
         display: block;
         width: 27.5rem;
         padding: 1.5rem;
         border: $border;
         margin: 0 auto;
         text-align: center;
+        border-radius: 8px;
     }
 
 }
